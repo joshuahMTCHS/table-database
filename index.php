@@ -44,13 +44,55 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Login Page</title>
+    <style type="text/css">
+        body{
+            background-color: #008080;
+        }
+        table{
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+            
+            border-top: ridge 3px white;
+            border-left: ridge 3px white;
+            border-bottom: ridge 2px black;
+            border-right: ridge 2px grey;
+            background-color: rgb(192,192,192);
+            color: black;
+            padding: 3px;
+        }
+        a:link{
+            text-decoration-color: none;
+            color: white;
+        }
+        a:visited{
+            text-decoration-color: none;
+            color: white;
+        }
+        td{
+            text-align: left;
+        }
+        th{
+            text-align: left;
+        }
+        
+        #sub{
+            border-top: ridge 3px white;
+            border-left: ridge 3px white;
+            border-bottom: ridge 2px black;
+            border-right: ridge 2px grey;
+            background-color: rgb(192,192,192);
+            color: black;
+            padding: 3px;
+        }
+        </style>
 </head>
     <body>
     <h1>Login</h1>
     <form action="index.php" method="post">
-    <label>Username:</label><input type="text" name="user" size="20" maxlength="20"/><br>
-    <label>Password:</label><input type="password" name="pass" size="20" maxlength="20"/><br>
-    <input type="submit" name="submit" value="Login" />
+    <label>Username:</label><br><input type="text" name="user" size="20" maxlength="20"/><br><br>
+    <label>Password:</label><br><input type="password" name="pass" size="20" maxlength="20"/><br><br>
+    <input type="submit" name="submit" value="Login" id="sub"/>
     </form>
     </body>
 </html>
